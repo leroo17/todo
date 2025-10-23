@@ -1,5 +1,4 @@
 // import React from 'react';
-import Header from "../components/Header/Header";
 import Form from "../components/Form/Form";
 import { ToDoList } from "../components/ToDoList/ToDoList";
 import { Todo } from "../models/todo-item"
@@ -28,21 +27,21 @@ export const ToDoListPage = () => {
 
     //     const todos: Todo[] = [
 
-    //     {
-    //         id: 0,
-    //         text: 'Первая задача',
-    //         isDone: false
-    //     },
-    //     {
-    //         id: 1,
-    //         text: 'Вторая задача',
-    //         isDone: true
-    //     },
-    //     {
-    //         id: 3,
-    //         text: 'Третья задача',
-    //         isDone: false
-    //     }
+        // {
+        //     id: 0,
+        //     text: 'Первая задача',
+        //     isDone: false
+        // },
+        // {
+        //     id: 1,
+        //     text: 'Вторая задача',
+        //     isDone: true
+        // },
+        // {
+        //     id: 3,
+        //     text: 'Третья задача',
+        //     isDone: false
+        // }
     // ];
     const notify = (text: string) => toast(text);
 
@@ -89,7 +88,6 @@ export const ToDoListPage = () => {
         //     <span>ToDo List Page</span>
         // </React.Fragment>
         <>
-            <Header />
             <Form createNewToDo={createNewToDo}/>
             <ToDoList todos={todos} updateToDo={updateToDo} deleteToDo={deleteToDo}/>
             <ToastContainer 
